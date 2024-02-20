@@ -1,0 +1,104 @@
+body{
+    background-color: rgb(18, 19, 23);
+}
+h1{
+    color: aliceblue;
+}
+.wholeContainer{ /*Parent Container*/
+    height: 745px;
+    width: 50%;
+ 
+    position: relative;
+
+    top: 50px;
+    left: 25%;
+}
+/*color for containers*/
+#container_1, #container_2, #container_3, #container_4, 
+#container_5, #container_6, #container_7 {
+    background-color: rgb(8, 8, 10);
+}
+#container_1{ /*Bottom Line*/
+    height: 35%;
+    width: 64%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 19px;
+    position: absolute;
+
+}
+#container_2{ /*Profile Pic*/
+    height: 60%;
+    width: 35%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 19px;
+    position: absolute;
+
+    left: 65%;
+}
+.profile-pic{
+    height: 100%;
+    max-width: 100%;
+    border-radius: 20px;
+
+    display: block;
+}
+#container_3{ /*About Me*/
+    height: 23.5%;
+    width: 64%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 19px;
+    position: absolute;
+
+    top: 36.5%;
+}
+#container_4{ /*Testimony*/
+    height: 23.5%;
+    width: 64%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 19px;
+    position: absolute;
+
+    top: 61.5%;
+    left: 36%;
+}
+#container_5{ /*Projects*/
+    height: 23.5%;
+    width: 35%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 19px;
+    position: absolute;
+
+    top: 61.5%;
+}
+#container_6{ /*Socials*/
+    height: 5.5%;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 19px;
+    position: absolute;
+
+    top: 86.5%;
+}
+#container_7{
+    height: 5.5%;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 19px;
+    position: absolute;
+
+    top: 93.5%;
+}
