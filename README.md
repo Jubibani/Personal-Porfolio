@@ -1,2 +1,2 @@
 # demo
-an exercise from my college.
+-An exercise from my college.
