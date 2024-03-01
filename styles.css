@@ -15,6 +15,13 @@ h1{
 
     
 }
+/*circle*/
+.ciecle {
+    height: 10%;
+    width: 10%;
+
+    background-color: white;
+}
 /*color for containers*/
 #container_1, #container_2, #container_3, #container_4, 
 #container_5, #container_6, #container_7, #container_8 {
@@ -23,9 +30,6 @@ h1{
 #container_1{ /*My-Profile*/
     height: 55%;
     width: 47%;
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
     border-radius: 19px;
     position: absolute;
 
@@ -33,50 +37,69 @@ h1{
 #container_2{ /*MyQoute*/
     height: 75.3%;
     width: 40%;
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
     border-radius: 19px;
     position: absolute;
 
     left: 48.5%;
 }
-.profile-pic{
+.profile-pic {
     height: 100%;
-    max-width: 100%;
+    width: 100%;
     border-radius: 20px;
-
-    display: block;
+    object-fit: cover; /* This ensures the image covers the entire container */
 }
-#container_3{ /*Projects*/
+.facebook-logo{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+.linkedin-logo{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+
+    transition: transform 0.5s ease-out;
+}
+.github-logo{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+.myqute-logo{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+
+    transition: transform 0.3s ease;
+}
+#container_3{ /*facebook*/
     height: 18.5%;
     width: 15%;
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
     border-radius: 19px;
     position: absolute;
 
     top: 56.9%;
 }
-#container_4{ /*Projects*/
+#container_4{ /*linkein*/
     height: 18.5%;
     width: 15%;
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
     border-radius: 19px;
     position: absolute;
 
     top: 56.9%;
     left: 16%;
 }
-#container_5{ /*Projects*/
+#container_5{ /*github*/
     height: 18.5%;
     width: 15%;
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
     border-radius: 19px;
     position: absolute;
 
@@ -87,22 +110,96 @@ h1{
 #container_6{ /*contacts*/
     height: 22.5%;
     width: 88.5%;
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
     border-radius: 19px;
     position: absolute;
 
     top: 77.5%;
 }
-#container_7{ /*MyQoute*/
+#container_7{ /*sidePanel*/
     height: 100%;
     width: 10%;
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
     border-radius: 19px;
     position: absolute;
 
     left: 90%;
+}
+#container_8{ /*MyQoute*/
+    height: 100%;
+    width: 10%;
+    border-radius: 19px;
+    position: absolute;
+
+    left: 90%;
+}
+/*************Hover Effect*******************/
+/*------------------------[My Qoutes]----------------------------*/
+.myqute-logo:hover{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+
+    transform: scale(1.055); /* Scale the image by 10% on hover */
+}
+
+/*------------------------[Social Button]----------------------------*/
+.facebook-logo:hover{ /*facebook*/
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+
+    transform: scale(1.1); 
+}
+#container_3:hover {
+    height: 18.5%;
+    width: 47%;
+    border-radius: 19px;
+    position: absolute;
+
+}
+#container_3:hover ~ #container_4 ,
+#container_3:hover ~ #container_5{
+    display: none !important;
+}
+
+.linkedin-logo:hover{ /*linkedin*/
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+
+    transform: scale(1.1); 
+}
+#container_4:hover {
+    height: 18.5%;
+    width: 47%;
+    border-radius: 19px;
+    position: absolute;
+
+    left: 0%;
+}
+#container_4:hover ~ #container_3 ,
+#container_4:hover ~ #container_5{
+    display: none !important;
+}
+.github-logo:hover{ /*linkedin*/
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+
+    transform: scale(1.1); 
+}
+#container_5:hover {
+    height: 18.5%;
+    width: 47%;
+    border-radius: 19px;
+    position: absolute;
+
+    left: 0%;
+}
+#container_5:hover ~ #container_3 ,
+#container_5:hover ~ #container_4{
+    display: none !important;
 }
