@@ -41,8 +41,17 @@ h1{
     width: 47%;
     border-radius: 19px;
     position: absolute;
-    
-    opacity: 0;
+
+    left: -30%;
+}
+#container_1-1:hover{ /*My-Profile*/
+    height: 55%;
+    width: 47%;
+    border-radius: 19px;
+    position: absolute;
+    background-color: whitesmoke;
+
+    left: -30%;
 }
 #container_2{ /*MyQoute*/
     height: 75.3%;
@@ -114,9 +123,12 @@ h1{
     height: 100%;
     width: 100%;
     border-radius: 20px;
-    object-fit: cover;
+    object-fit: cover; /* This ensures the image covers the entire container */
 
-    transition: transform 0.3s ease;
+    
+    transition: transform 0.5s ease;
+
+    cursor: pointer;
 }
 #container_3{ /*facebook*/
     height: 18.5%;
@@ -192,6 +204,16 @@ h1{
 
     transform: scale(1.045); 
 }
+.profile-pic:hover + #container_1-1:hover{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover; /* This ensures the image covers the entire container */
+
+    transform: scale(1.045);
+
+    opacity: 1;
+}
 /*------------------------[side-panels]----------------------------*/
 
 #container_7:hover{ /*sidePanel*/
@@ -221,6 +243,7 @@ h1{
     transition: left 0.5s ease;
     opacity: 1;
 }
+
 /*------------------------[My Qoutes]----------------------------*/
 .myqute-logo:hover{
     height: 100%;
@@ -278,6 +301,14 @@ h1{
     object-fit: cover;
 
     transform: scale(1.1); 
+}
+.projects:hover{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover; /* This ensures the image covers the entire container */
+
+    transform: scale(1.045); 
 }
 
 #container_5:hover {

@@ -11,7 +11,7 @@ container7.addEventListener("click", () => {
     if (container8.classList.contains("active")) {
       container8.style.width = "10%";
       container7.style.transform = "scale(1.025)"; 
-      container7.style.backgroundColor = "#cc0000";
+      container7.style.backgroundColor = "#162830";
       container8.classList.remove("active");
     } else {
       container8.style.width = "45%";
