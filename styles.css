@@ -12,15 +12,17 @@ h1{
 
     top: 50px;
     left: 25%;
+
+    
 }
 /*color for containers*/
 #container_1, #container_2, #container_3, #container_4, 
-#container_5, #container_6, #container_7 {
+#container_5, #container_6, #container_7, #container_8 {
     background-color: rgb(8, 8, 10);
 }
-#container_1{ /*Bottom Line*/
-    height: 35%;
-    width: 64%;
+#container_1{ /*My-Profile*/
+    height: 55%;
+    width: 47%;
     border-width: 1px;
     border-style: solid;
     border-color: black;
@@ -28,16 +30,16 @@ h1{
     position: absolute;
 
 }
-#container_2{ /*Profile Pic*/
-    height: 60%;
-    width: 35%;
+#container_2{ /*MyQoute*/
+    height: 75.3%;
+    width: 40%;
     border-width: 1px;
     border-style: solid;
     border-color: black;
     border-radius: 19px;
     position: absolute;
 
-    left: 65%;
+    left: 48.5%;
 }
 .profile-pic{
     height: 100%;
@@ -46,59 +48,61 @@ h1{
 
     display: block;
 }
-#container_3{ /*About Me*/
-    height: 23.5%;
-    width: 64%;
+#container_3{ /*Projects*/
+    height: 18.5%;
+    width: 15%;
     border-width: 1px;
     border-style: solid;
     border-color: black;
     border-radius: 19px;
     position: absolute;
 
-    top: 36.5%;
+    top: 56.9%;
 }
-#container_4{ /*Testimony*/
-    height: 23.5%;
-    width: 64%;
+#container_4{ /*Projects*/
+    height: 18.5%;
+    width: 15%;
     border-width: 1px;
     border-style: solid;
     border-color: black;
     border-radius: 19px;
     position: absolute;
 
-    top: 61.5%;
-    left: 36%;
+    top: 56.9%;
+    left: 16%;
 }
 #container_5{ /*Projects*/
-    height: 23.5%;
-    width: 35%;
+    height: 18.5%;
+    width: 15%;
     border-width: 1px;
     border-style: solid;
     border-color: black;
     border-radius: 19px;
     position: absolute;
 
-    top: 61.5%;
+    top: 56.9%;
+    left: 32%;
 }
-#container_6{ /*Socials*/
-    height: 5.5%;
-    width: 100%;
+
+#container_6{ /*contacts*/
+    height: 22.5%;
+    width: 88.5%;
     border-width: 1px;
     border-style: solid;
     border-color: black;
     border-radius: 19px;
     position: absolute;
 
-    top: 86.5%;
+    top: 77.5%;
 }
-#container_7{
-    height: 5.5%;
-    width: 100%;
+#container_7{ /*MyQoute*/
+    height: 100%;
+    width: 10%;
     border-width: 1px;
     border-style: solid;
     border-color: black;
     border-radius: 19px;
     position: absolute;
 
-    top: 93.5%;
+    left: 90%;
 }
