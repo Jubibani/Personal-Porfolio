@@ -1,5 +1,6 @@
 body{
-    background: linear-gradient(to top, #162830, #203a43);
+    background: #121929;
+    background: radial-gradient(#647a88, #162830);
 }
 h1{
     color: aliceblue;
@@ -33,6 +34,15 @@ h1{
     border-radius: 19px;
     position: absolute;
 
+    z-index: 2;
+}
+#container_1-1{ /*My-Profile*/
+    height: 55%;
+    width: 47%;
+    border-radius: 19px;
+    position: absolute;
+    
+    opacity: 0;
 }
 #container_2{ /*MyQoute*/
     height: 75.3%;
@@ -50,7 +60,24 @@ h1{
 
     
     transition: transform 0.5s ease;
+
+    cursor: pointer;
+    z-index: 2;
 }
+.panel {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Initially hide the panel off-screen to the right */
+    width: 300px;
+    height: 100vh;
+    background-color: #fff; /* Adjust as needed */
+    transition: right 0.5s ease; /* Transition the right property to create sliding effect */
+}
+
+.container.active + .panel {
+    right: 0; /* Show the panel when container is active */
+}
+
 .facebook-logo{
     height: 100%;
     width: 100%;
@@ -76,6 +103,14 @@ h1{
     transition: transform 0.5s ease;
 }
 .myqute-logo{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+
+    transition: transform 0.3s ease;
+}
+.projects{
     height: 100%;
     width: 100%;
     border-radius: 20px;
@@ -124,10 +159,13 @@ h1{
     border-radius: 19px;
     position: absolute;
 
-    background-color: #990000;
+    background-color: #162830;
     left: 90%;
 
     z-index: 2;
+    transition: all 0.5s ease;
+
+    cursor: pointer;
 }
 #container_8{ /*panelside*/
     height: 95%;
@@ -142,7 +180,7 @@ h1{
     opacity: 0;
 
     z-index: 1;
-    transition: transorm 0.3s ease-out;
+    transition: transform 0.3s ease-out;
 }
 /*************Hover Effect*******************/
 /*------------------------[My ProfilePic]----------------------------*/
@@ -152,34 +190,21 @@ h1{
     border-radius: 20px;
     object-fit: cover; /* This ensures the image covers the entire container */
 
-    
     transform: scale(1.045); 
 }
 /*------------------------[side-panels]----------------------------*/
+
 #container_7:hover{ /*sidePanel*/
     height: 100%;
     width: 10%;
     border-radius: 19px;
     position: absolute;
 
-    background-color: #990000;
+    background-color: #751111;
 
     left: 90%;
 
-    transform: scale(1.045); 
-    transition: all 0.5s ease;
-}
-#container_7:active{ /*sidePanel*/
-    height: 100%;
-    width: 10%;
-    border-radius: 19px;
-    position: absolute;
-
-    background-color: blue;
-
-    left: 90%;
-
-    transform: scale(1.045); 
+    transform: scale(1.025); 
     transition: all 0.5s ease;
 }
 #container_7:hover + #container_8{ /*panelside*/
@@ -195,11 +220,6 @@ h1{
 
     transition: left 0.5s ease;
     opacity: 1;
-}
-
-#container_7:hover + #container_8.active {
-    left: 60.5%; /* Move the container to the right when active */
-  
 }
 /*------------------------[My Qoutes]----------------------------*/
 .myqute-logo:hover{
@@ -259,6 +279,7 @@ h1{
 
     transform: scale(1.1); 
 }
+
 #container_5:hover {
     height: 18.5%;
     width: 47%;
